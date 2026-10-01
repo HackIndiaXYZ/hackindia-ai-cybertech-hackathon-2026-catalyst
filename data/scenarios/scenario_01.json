@@ -1,0 +1,112 @@
+[
+  {
+    "event_id": "EVT-001",
+    "timestamp": "2026-10-01T09:00:00",
+    "event_type": "LOGIN",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": null,
+    "resource": "Windows",
+    "source": "auth_server"
+  },
+  {
+    "event_id": "EVT-002",
+    "timestamp": "2026-10-01T09:01:00",
+    "event_type": "PROCESS_START",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": "chrome.exe",
+    "resource": null,
+    "source": "endpoint"
+  },
+  {
+    "event_id": "EVT-003",
+    "timestamp": "2026-10-01T09:02:00",
+    "event_type": "HEARTBEAT",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": null,
+    "resource": null,
+    "source": "endpoint_monitor"
+  },
+  {
+    "event_id": "EVT-004",
+    "timestamp": "2026-10-01T09:03:00",
+    "event_type": "PROCESS_START",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": "powershell.exe",
+    "resource": null,
+    "source": "endpoint"
+  },
+  {
+    "event_id": "EVT-005",
+    "timestamp": "2026-10-01T09:04:00",
+    "event_type": "FILE_ACCESS",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": "powershell.exe",
+    "resource": "finance.xlsx",
+    "source": "file_server"
+  },
+  {
+    "event_id": "EVT-006",
+    "timestamp": "2026-10-01T09:05:00",
+    "event_type": "LOGIN",
+    "user": "rahul",
+    "device": "LAPTOP-22",
+    "ip": "10.0.0.22",
+    "process": null,
+    "resource": "Windows",
+    "source": "auth_server"
+  },
+  {
+    "event_id": "EVT-007",
+    "timestamp": "2026-10-01T09:06:00",
+    "event_type": "NETWORK_CONNECTION",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": "powershell.exe",
+    "resource": "203.0.113.50:443",
+    "source": "network_sensor"
+  },
+  {
+    "event_id": "EVT-008",
+    "timestamp": "2026-10-01T09:07:00",
+    "event_type": "HEARTBEAT",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": null,
+    "resource": null,
+    "source": "endpoint_monitor"
+  },
+  {
+    "event_id": "EVT-009",
+    "timestamp": "2026-10-01T09:08:00",
+    "event_type": "DATA_TRANSFER",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": "powershell.exe",
+    "resource": "203.0.113.50",
+    "source": "network_sensor"
+  },
+  {
+    "event_id": "EVT-010",
+    "timestamp": "2026-10-01T09:09:00",
+    "event_type": "PROCESS_START",
+    "user": "rahul",
+    "device": "LAPTOP-22",
+    "ip": "10.0.0.22",
+    "process": "notepad.exe",
+    "resource": null,
+    "source": "endpoint"
+  }
+]

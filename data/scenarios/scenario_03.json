@@ -1,0 +1,79 @@
+[
+  {
+    "event_id": "ADV-001",
+    "timestamp": "2026-10-01T11:00:00",
+    "event_type": "LOGIN",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": null,
+    "resource": "Windows",
+    "source": "auth_server"
+  },
+  {
+    "event_id": "ADV-002",
+    "timestamp": "2026-10-01T11:01:00",
+    "event_type": "PROCESS_START",
+    "user": "rahul",
+    "device": "LAPTOP-17",
+    "ip": "10.0.0.15",
+    "process": "chrome.exe",
+    "resource": null,
+    "source": "endpoint"
+  },
+  {
+    "event_id": "ADV-003",
+    "timestamp": "2026-10-01T11:02:00",
+    "event_type": "LOGIN",
+    "user": "rahul",
+    "device": "LAPTOP-22",
+    "ip": "10.0.0.22",
+    "process": null,
+    "resource": "Windows",
+    "source": "auth_server"
+  },
+  {
+    "event_id": "ADV-004",
+    "timestamp": "2026-10-01T11:03:00",
+    "event_type": "PROCESS_START",
+    "user": "rahul",
+    "device": "LAPTOP-22",
+    "ip": "10.0.0.22",
+    "process": "notepad.exe",
+    "resource": null,
+    "source": "endpoint"
+  },
+  {
+    "event_id": "ADV-005",
+    "timestamp": "2026-10-01T11:04:00",
+    "event_type": "FILE_ACCESS",
+    "user": "rahul",
+    "device": "LAPTOP-22",
+    "ip": "10.0.0.22",
+    "process": "notepad.exe",
+    "resource": "notes.txt",
+    "source": "file_server"
+  },
+  {
+    "event_id": "ADV-006",
+    "timestamp": "2026-10-01T11:05:00",
+    "event_type": "NETWORK_CONNECTION",
+    "user": "rahul",
+    "device": "LAPTOP-22",
+    "ip": "10.0.0.22",
+    "process": "notepad.exe",
+    "resource": "198.51.100.20:443",
+    "source": "network_sensor"
+  },
+  {
+  "event_id": "ADV-007",
+  "timestamp": "2026-10-01T11:06:00",
+  "event_type": "DATA_TRANSFER",
+  "user": "rahul",
+  "device": "LAPTOP-22",
+  "ip": "10.0.0.22",
+  "process": "notepad.exe",
+  "resource": "198.51.100.20",
+  "source": "network_sensor"
+}
+]

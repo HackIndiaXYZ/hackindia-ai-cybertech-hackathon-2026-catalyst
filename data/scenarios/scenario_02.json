@@ -1,0 +1,134 @@
+[
+  {
+    "event_id": "EVT-201",
+    "timestamp": "2026-10-01T10:00:00",
+    "event_type": "LOGIN_FAILED",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": null,
+    "resource": "Windows",
+    "source": "auth_server"
+  },
+  {
+    "event_id": "EVT-202",
+    "timestamp": "2026-10-01T10:01:00",
+    "event_type": "LOGIN_FAILED",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": null,
+    "resource": "Windows",
+    "source": "auth_server"
+  },
+  {
+    "event_id": "EVT-203",
+    "timestamp": "2026-10-01T10:02:00",
+    "event_type": "LOGIN",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": null,
+    "resource": "Windows",
+    "source": "auth_server"
+  },
+  {
+    "event_id": "EVT-204",
+    "timestamp": "2026-10-01T10:03:00",
+    "event_type": "PROCESS_START",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": "cmd.exe",
+    "resource": null,
+    "source": "endpoint"
+  },
+  {
+    "event_id": "EVT-205",
+    "timestamp": "2026-10-01T10:04:00",
+    "event_type": "PRIVILEGE_CHANGE",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": "cmd.exe",
+    "resource": "admin",
+    "source": "identity_monitor"
+  },
+  {
+    "event_id": "EVT-206",
+    "timestamp": "2026-10-01T10:05:00",
+    "event_type": "FILE_ACCESS",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": "cmd.exe",
+    "resource": "employee_records.xlsx",
+    "source": "file_server"
+  },
+  {
+    "event_id": "EVT-207",
+    "timestamp": "2026-10-01T10:06:00",
+    "event_type": "HEARTBEAT",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": null,
+    "resource": null,
+    "source": "endpoint_monitor"
+  },
+  {
+    "event_id": "EVT-208",
+    "timestamp": "2026-10-01T10:07:00",
+    "event_type": "NETWORK_CONNECTION",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": "cmd.exe",
+    "resource": "203.0.113.80:443",
+    "source": "network_sensor"
+  },
+  {
+    "event_id": "EVT-209",
+    "timestamp": "2026-10-01T10:08:00",
+    "event_type": "DATA_TRANSFER",
+    "user": "aman",
+    "device": "LAPTOP-31",
+    "ip": "10.0.0.31",
+    "process": "cmd.exe",
+    "resource": "203.0.113.80",
+    "source": "network_sensor"
+  },
+  {
+    "event_id": "EVT-210",
+    "timestamp": "2026-10-01T10:03:30",
+    "event_type": "LOGIN",
+    "user": "neha",
+    "device": "LAPTOP-42",
+    "ip": "10.0.0.42",
+    "process": null,
+    "resource": "Windows",
+    "source": "auth_server"
+  },
+  {
+    "event_id": "EVT-211",
+    "timestamp": "2026-10-01T10:04:30",
+    "event_type": "PROCESS_START",
+    "user": "neha",
+    "device": "LAPTOP-42",
+    "ip": "10.0.0.42",
+    "process": "chrome.exe",
+    "resource": null,
+    "source": "endpoint"
+  },
+  {
+    "event_id": "EVT-212",
+    "timestamp": "2026-10-01T10:05:30",
+    "event_type": "HEARTBEAT",
+    "user": "neha",
+    "device": "LAPTOP-42",
+    "ip": "10.0.0.42",
+    "process": null,
+    "resource": null,
+    "source": "endpoint_monitor"
+  }
+]

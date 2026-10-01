@@ -1,0 +1,158 @@
+{
+  "graph_version": "0.5",
+  "nodes": [
+    {
+      "id": "EVT-001",
+      "label": "LOGIN",
+      "timestamp": "2026-10-01T09:03:00",
+      "source": "auth_server",
+      "user": "rahul",
+      "device": "LAPTOP-17",
+      "process": null,
+      "resource": "Windows"
+    },
+    {
+      "id": "EVT-002",
+      "label": "PROCESS_START",
+      "timestamp": "2026-10-01T09:04:00",
+      "source": "endpoint",
+      "user": "rahul",
+      "device": "LAPTOP-17",
+      "process": "powershell.exe",
+      "resource": null
+    },
+    {
+      "id": "EVT-003",
+      "label": "FILE_ACCESS",
+      "timestamp": "2026-10-01T09:05:00",
+      "source": "file_server",
+      "user": "rahul",
+      "device": "LAPTOP-17",
+      "process": "powershell.exe",
+      "resource": "finance.xlsx"
+    },
+    {
+      "id": "EVT-004",
+      "label": "NETWORK_CONNECTION",
+      "timestamp": "2026-10-01T09:07:00",
+      "source": "network_sensor",
+      "user": "rahul",
+      "device": "LAPTOP-17",
+      "process": "powershell.exe",
+      "resource": "203.0.113.50:443"
+    },
+    {
+      "id": "EVT-005",
+      "label": "DATA_TRANSFER",
+      "timestamp": "2026-10-01T09:08:00",
+      "source": "network_sensor",
+      "user": "rahul",
+      "device": "LAPTOP-17",
+      "process": "powershell.exe",
+      "resource": "203.0.113.50"
+    },
+    {
+      "id": "EVT-006",
+      "label": "HEARTBEAT",
+      "timestamp": "2026-10-01T09:06:00",
+      "source": "endpoint_monitor",
+      "user": "rahul",
+      "device": "LAPTOP-17",
+      "process": null,
+      "resource": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "EVT-001->EVT-002",
+      "source": "EVT-001",
+      "target": "EVT-002",
+      "relationship_type": "SEQUENCE",
+      "relationship_score": 0.75,
+      "evidence": [
+        "Same user: rahul",
+        "Same device: LAPTOP-17",
+        "Same IP: 10.0.0.15",
+        "Events are 60 seconds apart",
+        "Valid sequence: LOGIN \u2192 PROCESS_START"
+      ],
+      "provenance": {
+        "engine": "TRACE v0.4",
+        "method": "sequence-aware correlation",
+        "source_events": [
+          "EVT-001",
+          "EVT-002"
+        ]
+      }
+    },
+    {
+      "id": "EVT-002->EVT-003",
+      "source": "EVT-002",
+      "target": "EVT-003",
+      "relationship_type": "SEQUENCE",
+      "relationship_score": 0.9,
+      "evidence": [
+        "Same user: rahul",
+        "Same device: LAPTOP-17",
+        "Same IP: 10.0.0.15",
+        "Events are 60 seconds apart",
+        "Same process: powershell.exe",
+        "Valid sequence: PROCESS_START \u2192 FILE_ACCESS"
+      ],
+      "provenance": {
+        "engine": "TRACE v0.4",
+        "method": "sequence-aware correlation",
+        "source_events": [
+          "EVT-002",
+          "EVT-003"
+        ]
+      }
+    },
+    {
+      "id": "EVT-003->EVT-004",
+      "source": "EVT-003",
+      "target": "EVT-004",
+      "relationship_type": "SEQUENCE",
+      "relationship_score": 0.9,
+      "evidence": [
+        "Same user: rahul",
+        "Same device: LAPTOP-17",
+        "Same IP: 10.0.0.15",
+        "Events are 120 seconds apart",
+        "Same process: powershell.exe",
+        "Valid sequence: FILE_ACCESS \u2192 NETWORK_CONNECTION"
+      ],
+      "provenance": {
+        "engine": "TRACE v0.4",
+        "method": "sequence-aware correlation",
+        "source_events": [
+          "EVT-003",
+          "EVT-004"
+        ]
+      }
+    },
+    {
+      "id": "EVT-004->EVT-005",
+      "source": "EVT-004",
+      "target": "EVT-005",
+      "relationship_type": "SEQUENCE",
+      "relationship_score": 0.9,
+      "evidence": [
+        "Same user: rahul",
+        "Same device: LAPTOP-17",
+        "Same IP: 10.0.0.15",
+        "Events are 60 seconds apart",
+        "Same process: powershell.exe",
+        "Valid sequence: NETWORK_CONNECTION \u2192 DATA_TRANSFER"
+      ],
+      "provenance": {
+        "engine": "TRACE v0.4",
+        "method": "sequence-aware correlation",
+        "source_events": [
+          "EVT-004",
+          "EVT-005"
+        ]
+      }
+    }
+  ]
+}
