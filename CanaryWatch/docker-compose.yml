@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/canarywatch.db
+      CORS_ORIGINS: http://localhost:5173
+    volumes:
+      - canarywatch-data:/app/data
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_BASE: http://localhost:8000
+    depends_on:
+      - backend
+volumes:
+  canarywatch-data:
